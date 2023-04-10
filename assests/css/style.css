@@ -336,5 +336,12 @@ font-family: "Quicksand";
 }
 /*validate*/
 form .error{
-  color: #879207;
+  color: #f8470c;
+}
+
+/*Media queries*/
+@media  screen and (max-width: 425px){
+  #phone,#laptop{
+    display: none;
+  }
 }

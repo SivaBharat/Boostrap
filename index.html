@@ -14,6 +14,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="./assests/js/validation.js"></script>
 </head>
 
 <body>
@@ -168,8 +169,8 @@
         </div>
       </div>
 
-      <div class="col-7 col-sm-3 col-md-6 col-lg-4 ">
-        <img src="assests/images/phone.png" class="img-fluid p-4" width="70%" alt="...">
+      <div class="col-7 col-sm-3 col-md-6 col-lg-4" >
+        <img src="assests/images/phone.png" class="img-fluid p-4" width="70%" alt="..." id="phone">
       </div>
     </div>
   </div>
@@ -179,7 +180,7 @@
     <div class="container">
       <div class="row ">
         <div class="col-2 col-sm-10 col-md-6 col-lg-6 mt-5   ms-auto">
-          <img src="assests/images/lap.png" class="img-fluid p-4">
+          <img src="assests/images/lap.png" class="img-fluid p-4" id="laptop">
         </div>
         <div class="col-10 col-sm-1 col-md-6 col-lg-4 ">
           <h6 class="pt-5 "  id="txtpg4">Zoom-imm is an essential</h6>
@@ -441,45 +442,6 @@
   </div>
 </div>
 </footer>
-<script>
-  $(document).ready(function(){
-      $('#myform').validate({
-          rules:{
-              user:{
-                  required:true,
-                  pattern:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$#])[A-Za-z\d@$#]{7,15}$/,
-              },
-              mbl:{
-                  required:true,
-                  pattern:/^[0-9]{10}$/,
-              },
-              mail:{
-                  required:true,
-                  email:true,
-                  pattern:/^([a-zA-Z0-9_])+@cgvak.com$/,
-              },
-              comment:{
-                required:true,
-              },
-          },
-          messages:{
-              pass:{
-                  required:"Enter your username",
-                  pattern:"Enter the valid username",
-              },
-              mbl:{
-                  required:"Enter your Phone number",
-                  pattern:"Enter the valid number",
-              },
-              mail:{
-                  required:"enter your email",
-                  email:"enter valid email",
-              },
-          },
-      });
-  });
-</script>
-
 </body>
 
 </html>
