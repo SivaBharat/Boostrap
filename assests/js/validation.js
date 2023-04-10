@@ -4,7 +4,9 @@
           rules:{
               user:{
                   required:true,
-                  pattern:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$#])[A-Za-z\d@$#]{7,15}$/,
+                  pattern: /^[A-Za-z' ']+$/,
+                  minlength:5,
+                  maxlength:15,
               },
               mbl:{
                   required:true,
@@ -13,16 +15,21 @@
               mail:{
                   required:true,
                   email:true,
-                  pattern:/^([a-zA-Z0-9_])+@cgvak.com$/,
+                  pattern: /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/,
               },
               comment:{
                 required:true,
+                minlength:10,
+                maxlength:100,
+                pattern: /^[A-Za-z0-9' ']+$/,
               },
           },
           messages:{
-              pass:{
+         user:{
                   required:"Enter your username",
-                  pattern:"Enter the valid username",
+                  pattern:"username must contains alphabets and space only",
+                  minlength:"username must have five characters",
+                  maxlength:"username have 15 characters only",
               },
               mbl:{
                   required:"Enter your Phone number",
@@ -32,6 +39,12 @@
                   required:"enter your email",
                   email:"enter valid email",
               },
+              comment:{
+
+                required:"enter the comment",
+                minlength:"comment have atleast ten characters",
+                pattern:"combination of alphabets and numbers only",
+              }
           },
       });
   });

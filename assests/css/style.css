@@ -26,7 +26,8 @@
 
 @font-face {
   font-family: 'Ribbon';
-  src: url(./assets/fonts/ribbon/Ribbon131BT-Regular.otf);
+  src: url(/assests/fonts/Ribbon131BT-Regular.otf);
+
 }
 
 #bg1 {
@@ -64,6 +65,63 @@
 #smallicon{
   background-color: #d9e271;
 }
+/*stye for txt*/
+.best {
+  font-family: 'Ribbon';
+  font-size: 4rem;
+  color: #aab33c;
+  margin-top: -75%;
+  margin-left: 30%;
+}
+
+.best1 {
+  font-family: 'Ribbon';
+  font-size: 2rem;
+  color: #aab33c;
+  margin-top: -60%;
+  margin-left: 37%;
+}
+
+.best2 {
+  font-family: 'Ribbon';
+  font-size: 2rem;
+  color: #aab33c;
+  margin-top: -70%;
+  margin-left: 37%;
+}
+
+.font {
+  font-size: 150%;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 800;
+  font-family: "Quicksand";
+  margin-left: 30%;
+}
+
+.but {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Quicksand";
+  margin-left: 30%;
+}
+
+.but1 {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Quicksand";
+  margin-left: 34%;
+}
+
+.but2 {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Quicksand";
+  margin-left: 37%;
+}
+
+
 
 
 
@@ -122,6 +180,7 @@ font-family: "Quicksand";
 width: 18%;
 font-family: "Quicksand";
 }
+
 
 .table thead th:first-child {
 border-top-left-radius: 10px;
@@ -225,6 +284,14 @@ font-family: "Quicksand";
 #click:hover {
 color: #5f6517;
 }
+#card:hover{
+  transform: scale(1.1);
+  transition:ease-out ;
+  }
+  #smallicon:hover{
+    transform: scale(1.1);
+    transition:ease-out ;
+    }
 
 /*css for card in page 6*/
 .--card:hover{
@@ -343,5 +410,12 @@ form .error{
 @media  screen and (max-width: 425px){
   #phone,#laptop{
     display: none;
+  }
+}
+
+@media (max-width: 465px){
+  #menu{
+    font-size: 6px;
+    line-height: 0px;
   }
 }
