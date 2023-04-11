@@ -19,16 +19,16 @@
               },
               comment:{
                 required:true,
-                minlength:10,
                 maxlength:100,
                 pattern: /^[A-Za-z0-9' ']+$/,
               },
+              
           },
           messages:{
          user:{
                   required:"Enter your username",
-                  pattern:"username must contains alphabets and space only",
-                  minlength:"username must have five characters",
+                  pattern:"username contains alphabets and space only",
+                  minlength:"username atleast have five characters",
                   maxlength:"username have 15 characters only",
               },
               mbl:{
@@ -40,11 +40,13 @@
                   email:"enter valid email",
               },
               comment:{
-
                 required:"enter the comment",
-                minlength:"comment have atleast ten characters",
                 pattern:"combination of alphabets and numbers only",
               }
+             
           },
       });
   });
+
+ 
+
